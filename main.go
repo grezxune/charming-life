@@ -175,7 +175,7 @@ func (board board) View() string {
 		s += "\n"
 	}
 
-	s += "\nPress q to quit.\n"
+	s += "\nPress q to quit, r to reset board, n to manually iterate the board\n"
 
 	textStyle := lipgloss.NewStyle().Align(lipgloss.Center).Width(30).Foreground(lipgloss.Color("#ffffff")).Background(lipgloss.Color("#000000"))
 	test := textStyle.Render("Testing!")
